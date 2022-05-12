@@ -1,0 +1,68 @@
+<link href="calculator.css" rel="stylesheet">
+<script src="calculator.js"></script>
+
+<!DOCTYPE html>
+<html>
+      <head>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+            <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      </head>
+
+      <header>
+        	<div class="row head_nav">
+                  <p style="font-size: 40px;">CALCULATOR</p>
+            </div>
+            <hr style="margin-top: 0px; margin-bottom: 0px;">
+      </header>
+<!--------------------------------------B----O----D----Y------------------------------------------>
+      <body class="main_body">
+            <div class="top_space"></div>
+            <div class="rect">
+                  <div class="screen_rect">
+                        <input id="screen_id" class="screen" type="text" value="0">
+                  </div>
+                  <div class="button_rect_out">
+                        <div class="button_rect">
+                              <div class="row">
+                                    <div class="col-sm button clear" id="CE" onmousedown="down_CE()" onmouseup="up_CE()" onmouseover="mouseover_CE()"; onmouseleave="mouseleave_CE()">CE</div>
+                                    <div class="col-sm button clear" id="C" onmousedown="down_C()" onmouseup="up_C()" onmouseover="mouseover_C()"; onmouseleave="mouseleave_C()">C</div>
+                                    <div class="col-sm button delete" id="DEL" onmousedown="down_DEL()" onmouseup="up_DEL()" onmouseover="mouseover_DEL()"; onmouseleave="mouseleave_DEL()">DEL</div>
+                                    <div class="col-sm button division" id="divi" onmousedown="down_divi()" onmouseup="up_divi()" onmouseover="mouseover_divi()"; onmouseleave="mouseleave_divi()">/</div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-sm button seven" id="seven" onmousedown="down_seven()" onmouseup="up_seven()" onmouseover="mouseover_seven()"; onmouseleave="mouseleave_seven()">7</div>
+                                    <div class="col-sm button eight" id="eight" onmousedown="down_eight()" onmouseup="up_eight()" onmouseover="mouseover_eight()"; onmouseleave="mouseleave_eight()">8</div>
+                                    <div class="col-sm button nine" id="nine" onmousedown="down_nine()" onmouseup="up_nine()" onmouseover="mouseover_nine()"; onmouseleave="mouseleave_nine()">9</div>
+                                    <div class="col-sm button multiple" id="multi" onmousedown="down_multi()" onmouseup="up_multi()" onmouseover="mouseover_multi()"; onmouseleave="mouseleave_multi()">*</div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-sm button four" id="four" onmousedown="down_four()" onmouseup="up_four()" onmouseover="mouseover_four()"; onmouseleave="mouseleave_four()">4</div>
+                                    <div class="col-sm button five" id="five" onmousedown="down_five()" onmouseup="up_five()" onmouseover="mouseover_five()"; onmouseleave="mouseleave_five()">5</div>
+                                    <div class="col-sm button six" id="six" onmousedown="down_six()" onmouseup="up_six()" onmouseover="mouseover_six()"; onmouseleave="mouseleave_six()">6</div>
+                                    <div class="col-sm button minus" id="minus" onmousedown="down_minus()" onmouseup="up_minus()" onmouseover="mouseover_minus()"; onmouseleave="mouseleave_minus()">-</div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-sm button one" id="one" onmousedown="down_one()" onmouseup="up_one()" onmouseover="mouseover_one()"; onmouseleave="mouseleave_one()">1</div>
+                                    <div class="col-sm button two" id="two" onmousedown="down_two()" onmouseup="up_two()" onmouseover="mouseover_two()"; onmouseleave="mouseleave_two()">2</div>
+                                    <div class="col-sm button three" id="three" onmousedown="down_three()" onmouseup="up_three()" onmouseover="mouseover_three()"; onmouseleave="mouseleave_three()">3</div>
+                                    <div class="col-sm button plus" id="plus" onmousedown="down_plus()" onmouseup="up_plus()" onmouseover="mouseover_plus()"; onmouseleave="mouseleave_plus()">+</div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-sm button symbol" id="symbol" onmousedown="down_symbol()" onmouseup="up_symbol()" onmouseover="mouseover_symbol()"; onmouseleave="mouseleave_symbol()">+/-</div>
+                                    <div class="col-sm button sero" id="zero" onmousedown="down_zero()" onmouseup="up_zero()" onmouseover="mouseover_zero()"; onmouseleave="mouseleave_zero()">0</div>
+                                    <div class="col-sm button dot" id="dot" onmousedown="down_dot()" onmouseup="up_dot()" onmouseover="mouseover_dot()"; onmouseleave="mouseleave_dot()">.</div>
+                                    <div class="col-sm button result" id="is" onmousedown="down_is()" onmouseup="up_is()" onmouseover="mouseover_is()"; onmouseleave="mouseleave_is()">=</div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </body>
+</html>

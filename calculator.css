@@ -1,0 +1,87 @@
+header{
+    font-family: Trebuchet MS;
+    background-color: rgb(30, 30, 30);
+    box-shadow: gray; 
+    position: sticky;
+    top: 0;
+    color: white;
+    /*box-shadow: 0 4px 8px 0 rgb(200, 200, 200), 0 6px 20px 0 rgb(100, 100, 100);*/
+    text-align: center;
+}
+
+.main_body{
+    font-family: Trebuchet MS;
+    background-color: rgb(30, 30, 30);
+    box-shadow: gray; 
+    position: sticky;
+    top: 0;
+    color: white;
+    /*box-shadow: 0 4px 8px 0 rgb(200, 200, 200), 0 6px 20px 0 rgb(100, 100, 100);*/
+    text-align: center;
+}
+
+.top_space{
+    height: 50px;
+}
+.rect{
+    width: 300px;
+    margin: auto;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    height: 350px;
+}
+.screen_rect{
+    margin: auto;
+    margin-top: 25px;
+    width: 260px;
+    
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    height: 50px;
+}
+.button_rect_out{
+    margin: auto;
+    margin-top: 15px;
+    width: 260px;
+    
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    height: 235px;
+}
+.button_rect{
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 12px;
+    width: 232px;
+    
+    height: 230px;
+}
+.button{
+    transition-duration: 0.2s;
+    margin: 5px;
+    padding-top: 8px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.screen{
+    margin-top: 1px;
+    background-color: rgb(30,30,30);
+    border: none; 
+    color: white; 
+    text-align: right;
+    font-weight: bold;
+    outline: none;
+    width: 250px;
+    font-family: Bauhaus 93;
+    font-size: 29px;
+}
